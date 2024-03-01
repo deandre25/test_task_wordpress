@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Template</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a href="./contacts.html">link to contacts page</a>
+    <header>
+      <h1>Header</h1>
+      <div class="header-options">
+        <label><input type="radio" name="header-option" value="header1">Header 1</label>
+        <label><input type="radio" name="header-option" value="header2">Header 2</label>
+      </div>
+    </header>
+
+    <main>
+      <h2>Main Content</h2>
+      <div class="sidebar">
+        <h3>Sidebar</h3>
+        <div class="sidebar-options">
+          <label><input type="radio" name="sidebar-option" value="left">Left</label>
+          <label><input type="radio" name="sidebar-option" value="right">Right</label>
+          <label><input type="radio" name="sidebar-option" value="none">No Sidebar</label>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <h3>Footer</h3>
+      <div class="footer-options">
+        <label><input type="radio" name="footer-option" value="footer1">Footer 1</label>
+        <label><input type="radio" name="footer-option" value="footer2">Footer 2</label>
+      </div>
+    </footer>
+
+    <div class="color-scheme-form">
+      <h3>Color Scheme Control</h3>
+      <label for="background-color">Background Color:</label>
+      <input type="color" id="background-color" name="background-color">
+      <label for="text-color">Text Color:</label>
+      <input type="color" id="text-color" name="text-color">
+      <button id="apply-colors">Apply Colors</button>
+    </div>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>

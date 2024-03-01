@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <style>
+      /* Додайте свої стилі тут */
+      .contact-form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .contact-form label {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .contact-form input[type="text"],
+      .contact-form input[type="email"],
+      .contact-form textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+      .contact-form textarea {
+        height: 100px;
+      }
+
+      .contact-form button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .contact-form button:hover {
+        background-color: #0056b3;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <form id="contact-form" action="#" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <div style="display: none;">
+          <label for="antispam">Antispam:</label>
+          <input type="text" id="antispam" name="antispam">
+          <!-- Це поле залишено прихованим для захисту від спаму -->
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script>
+      // Обробник для відправки форми контактів
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault(); // Перешкоджаємо стандартній відправці форми
+        // Ваш код для відправки форми тут
+        // Наприклад, ви можете використовувати fetch або інші техніки AJAX
+        alert('Form submitted!'); // Замість цього реального коду відправки форми
+        // Очищаємо поля форми після успішної відправки
+        document.getElementById('name').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('message').value = '';
+        document.getElementById('antispam').value = '';
+      });
+
+    </script>
+  </body>
+</html>
