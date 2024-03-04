@@ -44,3 +44,12 @@ document.getElementById('apply-colors').addEventListener('click', function () {
   document.querySelector('.color-scheme-form').style.backgroundColor = backgroundColor;
   document.querySelector('.color-scheme-form').style.color = textColor;
 });
+
+document.getElementById('contact-form').addEventListener('submit', function (event) {
+  event.preventDefault(); 
+  alert('Form submitted!'); 
+  document.getElementById('name').value = '';
+  document.getElementById('email').value = '';
+  document.getElementById('message').value = '';
+  document.getElementById('antispam').value = '';
+});

@@ -1,5 +1,3 @@
-/* Header */
-
 .header1 {
     background-color: red;
 }
@@ -13,31 +11,25 @@
     height: 100%;
     background-color: lightgray;
     float: left;
-    /* Змініть на "right" для праворучного сайдбару */
 }
 
 .main-content {
     margin-left: 220px;
-    /* Збільште, якщо сайдбар праворучний */
     padding: 20px;
 }
 
-/* Стилі для сторінки налаштувань */
 #settings {
     margin-bottom: 20px;
 }
 
-/* Стилі для форми управління колірною схемою */
 #color-form {
     margin-top: 10px;
 }
 
-/* Стилі для футера */
 footer {
     margin-top: 20px;
 }
 
-/* Footer*/
 .footer {
     padding: 20px;
     color: white;
@@ -50,4 +42,45 @@ footer {
 
 .footer2 {
     background-color: orange;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
 }
